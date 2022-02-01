@@ -73,10 +73,10 @@ hr.navbar {
     font-weight: bold; 
     font-size: 30;
     color: rgb(0, 0, 238);
-   
+    border:25%;
 }
 
-.contenitore {
-    width: fit-content;
-
+td.orologio {
+    width: 25%;
+    height: auto;
 }
