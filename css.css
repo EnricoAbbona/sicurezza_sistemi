@@ -57,26 +57,28 @@ table {
 }
 
 td {
-	width: 25%;
+	width: 20%;
 	text-align: center;
 }
 
-hr.navbar {
-	border: 3px solid #4E35EA;
-	border-radius: 7px;
-	width: 70px;
-}
 
 #scr {
     width: 100%;
     height: auto; 
     font-weight: bold; 
-    font-size: 30;
-    color: rgb(0, 0, 238);
-    border:25%;
+    font-size: 30;        
+    color: #969590;
+	align-content: center;
+
+
 }
 
-td.orologio {
-    width: 25%;
-    height: auto;
+img.home {
+	width: 40px;
+	height: auto;
+}
+
+img.navbar_elements{
+	width: 27px;
+	height: auto;
 }
