@@ -73,12 +73,29 @@ td {
 
 }
 
+
 img.home {
 	width: 40px;
 	height: auto;
 }
 
-img.navbar_elements{
+.navbar_elements{
 	width: 27px;
 	height: auto;
+}
+
+.navbar_elements:hover {
+
+	width: 40px;
+	height: auto;
+	transition-duration: 0.35s;
+}
+
+/* FINE NAVBAR*/
+
+#input-area {
+	text-align: center;
+	margin: auto;
+	width: 50%;
+	padding: 10px;
 }
