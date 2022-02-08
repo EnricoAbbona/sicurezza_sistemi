@@ -4,7 +4,8 @@
        <meta charset="UTF-8">
        <title> Sicurezza informatica - tools</title>
        <link rel="stylesheet" type="text/css" href="css.css">
-       <script src="script.js"></script>
+       <script src="orologio.js"></script>
+       <script src="crittografia.js"> </script>
        <link rel="icon" type="image/x-icon" href="resources/favicon.ico">
        <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,7 +45,7 @@
        </div>
        <!-- FINE NAVBAR -->
        
-       <div id="input-area">
+      <div id="input-area">
        <span id="msg">
         Il seguente programma perfette di calcolare, tramite il <a href="https://it.wikipedia.org/wiki/Cifrario_di_Cesare">cifrario di Cesare</a> di crittografare e decrittografare un messaggio.
       </span>
@@ -52,14 +53,15 @@
         <label id="label-decrypted-msg" for="decrypted-msg">Testo in chiaro:</label>
         <input type="text" cols="40" rows="2" id="decrypted-msg">
         <p>
-          <input type="button" onclick="encrypt();" id="encrypt-button" value="Cripta">
-          <input type="button" onclick="decrypt();" id="decrypt-button" value="Decripta">
-          <label id="label-key" for="key">Chiave:</label>
-          <input type="text" id="key" value="3">
-        </p>
+            <button onclick="encrypt();" id="encrypt-button">Cripta</button>
+            <button onclick="decrypt();" id="decrypt-button">Decripta</button>
+            <label id="label-key" for="key">Chiave:</label>
+            <input type="text" id="key" value="3">
+          </p>
         <label id="label-encrypted-msg" for="encrypted-msg">Testo cifrato:</label>
-        <textarea cols="40" rows="2" id="encrypted-msg" value=""></textarea>
+        <textarea readonly="readonly" cols="40" rows="2" id="encrypted-msg" value=""></textarea>
     </div>
       </div>
+
     </body>
  </html>
