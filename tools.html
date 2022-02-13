@@ -45,14 +45,21 @@
       </div>
       <!-- FINE NAVBAR -->
       <div class="animazione" id="input-area">
-        <div class="feature"> <img class="immaginine" src="resources/lampadina.png">
-         <p>Il seguente programma permette, tramite il <a href="https://it.wikipedia.org/wiki/Cifrario_di_Cesare" target=”_blank”>cifrario di Cesare,</a> di cifrare e decifrare un messaggio.</p>
-        </div>
+         <div class="feature">
+            <img class="immaginine" src="resources/lampadina.png">
+            <p>Il seguente programma permette, tramite il <a href="https://it.wikipedia.org/wiki/Cifrario_di_Cesare" target=”_blank”>cifrario di Cesare,</a> di cifrare e decifrare un messaggio.</p>
+         </div>
          <div>
             <form>
-               <label>Testo in chiaro</label><input name="t" class="spaziatore" type="text"><br>
-               <label>Chiave numerica</label><input name="c"  class="spaziatore"type="text" value=3><br>
-               <label>Testo cifrato</label><textarea name="tc" class="spaziatore" type="text"></textarea><br>
+               <label>Testo in chiaro</label>
+               <textarea name="t" class="spaziatore" type="text"></textarea>
+               <br>
+               <label>Chiave numerica</label><input name="c"  class="spaziatore" type="text" id="chiavee" value=3><br>
+               <p id="displayato">Hai inserito un numero troppo grande, non ha senso che la chiave sia più grande dell'alfabeto</p>
+               <br>
+               <label>Testo cifrato</label>
+               <textarea name="tc" class="spaziatore" type="text"></textarea>
+               <br>
                <input type="button" class="button" id="encrypt-button" value="Cifra" onclick="Cifrato(t,tc,c)">
                <input type="button" class="button" id="encrypt-button" value="Decifra" onclick="Cifrato(t,tc,c,true)">
                <input type="button" class="button" id="delete-button" value="Cancella" onclick="Cancella(t,tc,c)">

@@ -1,41 +1,52 @@
-function Cifrato(testo, testoCifrato, chiave, decifra){
-  var c
-  if (decifra) {
-    c=parseInt(-chiave.value);
+function Cifrato(testo, testoCifrato, chiave, decifra) {
+	var c
 
-  }
-  else {
-    c=parseInt(chiave.value);
+	if (decifra) {
+		c = parseInt(-chiave.value);
 
-  }
-  var alfabeto = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  testo.value = testo.value.toUpperCase();
+	} else {
+		c = parseInt(chiave.value);
 
-  testoCifrato.value = "";
+	}
+	if (c > 26) {
+		document.getElementById("chiavee").style.background = '#e81717';
+		document.getElementById("chiavee").style.border = 'none';
+		document.getElementById("displayato").style.display = 'contents';
+	} else {
+		var alfabeto = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
-  while (c<0) c += 26;
+		testo.value = testo.value.toUpperCase();
 
-  var len = testo.value.length;
+		testoCifrato.value = "";
 
-  for (var i = 0; i < len; i++){
-var ch = testo.value.charAt(i);
+		while (c < 0) c += 26;
 
-if (ch >= 'A' & ch <= 'Z') {
-          
-    var pos = alfabeto.indexOf(ch);
+		var len = testo.value.length;
 
-    pos = (pos + c) % 26;
-          
-    testoCifrato.value += alfabeto.charAt(pos);
+		for (var i = 0; i < len; i++) {
+			var ch = testo.value.charAt(i);
+
+			if (ch >= 'A' & ch <= 'Z') {
+
+				var pos = alfabeto.indexOf(ch);
+
+				pos = (pos + c) % 26;
+
+				testoCifrato.value += alfabeto.charAt(pos);
+			}
+		}
+
+	}
 }
-  }
+
+function Cancella(testo, testoCifrato, chiave) {
+	testo.value = "";
+	testoCifrato.value = "";
+	chiave.value = 3;
+	document.getElementById("chiavee").style.background = 'white';
+	document.getElementById("chiavee").style.border = 'solid 1px #767676';
+	document.getElementById("displayato").style.display = 'none';
 }
 
-function Cancella(testo, testoCifrato, chiave){
-testo.value = "";
-testoCifrato.value = "";
-chiave.value = 3;
-}
 
-
-//alcune parti dello script sono state gentilmente prese in prestito da https://www.codingcreativo.it/cifrario-di-cesare-online  
+//alcune parti dello script sono state gentilmente prese in prestito da https://www.codingcreativo.it/cifrario-di-cesare-online
