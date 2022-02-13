@@ -103,11 +103,9 @@ img.home {
 
 }
 
-.decente {
-	padding: 10px;
-}
 
-#decrypt-button, #encrypt-button {
+
+#encrypt-button, #delete-button {
 	border-radius: 10px;
 	border: 2px solid #f64f64;
 	background-color: #f64f64;
@@ -115,4 +113,20 @@ img.home {
 	font-size: 18px;
 	font-weight: 500;
 	margin: 10px;
+}
+
+.spaziatore{
+	margin: 10px 0px 0px 5px;
+}
+
+.immaginine {
+	width: 50px;
+	height: auto;
+}
+
+.feature{
+	text-align: center;
+margin: auto;
+width: 35vw;
+
 }

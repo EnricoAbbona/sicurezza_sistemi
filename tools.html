@@ -1,67 +1,66 @@
-
 <html>
-    <head>
-       <meta charset="UTF-8">
-       <title> Sicurezza informatica - tools</title>
-       <link rel="stylesheet" type="text/css" href="css.css">
-       <script src="orologio.js"></script>
-       <script src="crittografia.js"> </script>
-       <link rel="icon" type="image/x-icon" href="resources/favicon.ico">
-       <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-</head>
-    <body onload="oro()">
- 
-     <!-- INIZIO NAVBAR -->
-       <div class="navbar">
-          <table class="img_navbar">
-             <tr>
-                <td>
-                   <a href="chiave_asimmetrica.html" class="a_imgnavbar">
-                   <img class="navbar_elements" src="resources/lock.svg" alt="crittografia asimmetrica">
-                   </a>
-                </td>
-                <td>
-                   <a href="chiave_simmetrica.html" class="a_imgnavbar">
-                   <img class="navbar_elements" src="resources/unlock.svg" alt="crittografia simmetrica">
-                   </a>
-                </td>
-                <td>
-                   <a href="index.html">
-                   <img class="home" src="resources/house-door.svg" alt="home">
-                   </a>
-                </td>
-                <td>
-                   <a href="tools.html" class="a_imgnavbar">
-                   <img class="navbar_elements" src="resources/tools.svg" alt="strumenti">
-                   </a>
-                </td>
-                <td>
-                   <p id="scr" ></p>
-                </td>
-             </tr>
-          </table>
-       </div>
-       <!-- FINE NAVBAR -->
-       
-      <div id="input-area animazione">
-       <span id="msg">
-        Il seguente programma perfette di calcolare, tramite il <a href="https://it.wikipedia.org/wiki/Cifrario_di_Cesare">cifrario di Cesare</a> di crittografare e decrittografare un messaggio.
-      </span>
-      <br><br> <div class="decente">
-        <label id="label-decrypted-msg" for="decrypted-msg">Testo in chiaro:</label>
-        <input type="text" cols="40" rows="2" id="decrypted-msg">
-        <p>
-            <button onclick="encrypt();" id="encrypt-button">Cripta</button>
-            <button onclick="decrypt();" id="decrypt-button">Decripta</button>
-            <label id="label-key" for="key">Chiave:</label>
-            <input type="text" id="key" value="3">
-          </p>
-        <label id="label-encrypted-msg" for="encrypted-msg">Testo cifrato:</label>
-        <textarea readonly="readonly" cols="40" rows="2" id="encrypted-msg" value=""></textarea>
-    </div>
+   <head>
+      <meta charset="UTF-8">
+      <title> Sicurezza informatica - tools</title>
+      <link rel="stylesheet" type="text/css" href="css.css">
+      <script src="orologio.js"></script>
+      <script src="crittografia.js"> </script>
+      <link rel="icon" type="image/x-icon" href="resources/favicon.ico">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+   </head>
+   <body onload="oro()">
+      <!-- INIZIO NAVBAR -->
+      <div class="navbar">
+         <table class="img_navbar">
+            <tr>
+               <td>
+                  <a href="chiave_asimmetrica.html" class="a_imgnavbar">
+                  <img class="navbar_elements" src="resources/lock.svg" alt="crittografia asimmetrica">
+                  </a>
+               </td>
+               <td>
+                  <a href="chiave_simmetrica.html" class="a_imgnavbar">
+                  <img class="navbar_elements" src="resources/unlock.svg" alt="crittografia simmetrica">
+                  </a>
+               </td>
+               <td>
+                  <a href="index.html">
+                  <img class="home" src="resources/house-door.svg" alt="home">
+                  </a>
+               </td>
+               <td>
+                  <a href="tools.html" class="a_imgnavbar">
+                  <img class="navbar_elements" src="resources/tools.svg" alt="strumenti">
+                  </a>
+               </td>
+               <td>
+                  <p id="scr" ></p>
+               </td>
+            </tr>
+         </table>
       </div>
-
-    </body>
- </html>
+      <!-- FINE NAVBAR -->
+      <div class="animazione" id="input-area">
+        <div class="feature"> <img class="immaginine" src="resources/lampadina.png">
+         <p>Il seguente programma permette, tramite il <a href="https://it.wikipedia.org/wiki/Cifrario_di_Cesare" target=”_blank”>cifrario di Cesare,</a> di cifrare e decifrare un messaggio.</p>
+        </div>
+         <div>
+            <form>
+               <label>Testo in chiaro</label><input name="t" class="spaziatore" type="text"><br>
+               <label>Chiave numerica</label><input name="c"  class="spaziatore"type="text" value=3><br>
+               <label>Testo cifrato</label><textarea name="tc" class="spaziatore" type="text"></textarea><br>
+               <input type="button" class="button" id="encrypt-button" value="Cifra" onclick="Cifrato(t,tc,c)">
+               <input type="button" class="button" id="encrypt-button" value="Decifra" onclick="Cifrato(t,tc,c,true)">
+               <input type="button" class="button" id="delete-button" value="Cancella" onclick="Cancella(t,tc,c)">
+            </form>
+         </div>
+      </div>
+      <script>
+         ScrollReveal().reveal('.animazione', { distance: '50px', duration:1500, easing: 'cubic-bezier(.251, .62, .355, 1)' });
+      </script>
+   </body>
+</html>
