@@ -1,19 +1,19 @@
-
 <html>
    <head>
-	  <meta charset="UTF-8">
+      <meta charset="UTF-8">
       <title> Sicurezza informatica - home</title>
       <link rel="stylesheet" type="text/css" href="css.css">
-      <script src="orologio.js"></script>
+      <script src="script/script.js"></script>
       <link rel="icon" type="image/x-icon" href="resources/favicon.ico">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-</head>
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+   </head>
    <body onload="oro()">
-
-	<!-- INIZIO NAVBAR -->
-      <div class="navbar">
+      <!-- INIZIO NAVBAR -->
+      <div id="navbar-home">
          <table class="img_navbar">
             <tr>
                <td>
@@ -41,8 +41,28 @@
                </td>
             </tr>
          </table>
+         <div class="progressi">
+            <div class="barra-progressi" id="barra-progressi"></div>
+         </div>
       </div>
-	  <!-- FINE NAVBAR -->
-
+      <!-- FINE NAVBAR -->
+      <!--<div class="features">
+         <div class="hero_content">
+         <h1>Ciao, benvenuto</h1>
+         </div>
+         
+          </div>-->
+      <div class="hero">
+         <video autoplay muted loop id="video_back">
+            <source src="resources/video_back.mp4" type="video/mp4">
+         </video>
+         <div class="hero_content animazione">
+            <h1 class="testo_grande">Ciao carissimo</h1>
+         </div>
+      </div>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <script>
+         ScrollReveal().reveal('.animazione', { distance: '50px', duration:1500, easing: 'cubic-bezier(.251, .62, .355, 1)' });
+      </script>
    </body>
 </html>
