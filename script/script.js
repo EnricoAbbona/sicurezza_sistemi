@@ -28,10 +28,10 @@ function oro() {
 setInterval(oro, 1000);
 
 window.onscroll = function () {
-	myFunction()
+	scrollo()
 };
 
-function myFunction() {
+function scrollo() {
 	var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
 	var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 	var scrolled = (winScroll / height) * 100;

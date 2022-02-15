@@ -46,23 +46,52 @@
          </div>
       </div>
       <!-- FINE NAVBAR -->
-      <!--<div class="features">
-         <div class="hero_content">
-         <h1>Ciao, benvenuto</h1>
-         </div>
-         
-          </div>-->
       <div class="hero">
          <video autoplay muted loop id="video_back">
             <source src="resources/video_back.mp4" type="video/mp4">
          </video>
-         <div class="hero_content animazione">
-            <h1 class="testo_grande">Ciao carissimo</h1>
-         </div>
+         <div class="hero_content">
+            <h1 class="testo_grande animazione stroke">Ciao, benvenuto nel nostro sito</h1>
+            <p class="sottotitolo animazione stroke"> Qua troverai tutto quello che ti serve sapere riguardo la crittografia</p>
+         </div>      
+      </div>
+   <!-- FINE HERO CONTENT -->
+      <div class="mega-contenitore">
+            <div class="contenitore-centrale contenuto">
+              <img src="resources/crittografia.png" class="immagine-feature">
+               <p class="evidenziato"> La crittografia</p>
+               <p>La crittografia è la base della protezione dei dati ed il modo più importante per garantire che le informazioni che ci scambiamo non possano essere rubate e lette. Ormai è noto che Internet è il mezzo più diffuso per veicolare informazioni ed è evidente quanto spesso si sottovalutano i rischi di un suo uso errato. Per questo emerge sempre di più la necessità di una forma di cifratura.</p>
+            </div>
+            <p class="paragrafo-sparso"><a href="https://it.wikipedia.org/wiki/Crittografia" target=”_blank”>La crittografia </a> è la tecnica che si occupa della rappresentazione di un messaggio in modo tale che l’informazione in esso contenuta possa essere recepita solo dal destinatario</p>
+           <hr>
+           
+            <div class="contenitore">
+               <img class="immagine-feature" src="resources/social-network.png">
+                  <p class="evidenziato"> Chi la usa?</p>
+                  <p>Diversi social network negli ultimi anni hanno implementato sistemi di crittografia al fine di proteggere i propri utenti dagli attacchi informatici. Gli esem</p>
+           <!-- ATTENZIONE: SCRIVERE PRIMA PARTE IN UNA LINEA SPARSA E METTERE I SOCIAL IN UNA RIGA -->
+               </div>
+
+            <div class="contenitore">
+               <img class="immagine-feature" src="resources/social-network.png">
+                  <p class="evidenziato"> Chi la usa?</p>
+                  <p>Anim reprehenderit esse anim aliquip magna magna consequat culpa veniam sunt voluptate est velit.</p>
+            </div>
+            
+            <div class="contenitore">
+               <img class="immagine-feature" src="resources/social-network.png">
+                  <p class="evidenziato"> Chi la usa?</p>
+                  <p>Anim reprehenderit esse anim aliquip magna magna consequat culpa veniam sunt voluptate est velit.</p>
+            </div>
+
       </div>
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <script>
-         ScrollReveal().reveal('.animazione', { distance: '50px', duration:1500, easing: 'cubic-bezier(.251, .62, .355, 1)' });
-      </script>
+    
+    
+      <!-- SCRIPT ANIMAZIONI -->
+    <script>
+         ScrollReveal().reveal('.animazione', { distance: '50px', duration:1500, interval:200, scale: 0.85, reset:true, easing: 'cubic-bezier(.251, .62, .355, 1)' });
+         ScrollReveal().reveal('.contenuto', { distance: '50px', duration:1500, easing: 'cubic-bezier(.251, .62, .355, 1)' });
+     </script>
    </body>
 </html>
