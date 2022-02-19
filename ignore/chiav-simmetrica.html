@@ -1,0 +1,81 @@
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title> El primo </title>
+      <link rel="stylesheet" type="text/css" href="../css/css.css">
+      <link rel="stylesheet" type="text/css" href="multimedia/elp.css">
+      <script src="../script/script.js"></script>
+      <script src="multimedia/login.js"></script>
+      <link rel="icon" type="image/x-icon" href="../resources/favicon.ico">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+   </head>
+   <body onload="oro()">
+      <!-- INIZIO NAVBAR -->
+      <div id="navbar-home">
+         <table class="img_navbar">
+            <tr>
+               <td>
+                  <a href="../chiave_asimmetrica.html" class="a_imgnavbar">
+                  <img class="navbar_elements" src="../resources/lock.svg" alt="crittografia asimmetrica">
+                  </a>
+               </td>
+               <td>
+                  <a href="../chiave_simmetrica.html" class="a_imgnavbar">
+                  <img class="navbar_elements" src="../resources/unlock.svg" alt="crittografia simmetrica">
+                  </a>
+               </td>
+               <td>
+                  <a href="../index.html">
+                  <img class="home" src="../resources/house-door.svg" alt="home">
+                  </a>
+               </td>
+               <td>
+                  <a href="../tools.html" class="a_imgnavbar">
+                  <img class="navbar_elements" src="../resources/tools.svg" alt="strumenti">
+                  </a>
+               </td>
+               <td>
+                  <p id="scr" ></p>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <!-- FINE NAVBAR -->
+      <div class="login" id="displayatoo">
+        <div class="centrato">
+                <h1> NON PUOI ENTRARE, PRIMA DEVI METTERE LA PASSWORD!!!!!!</h1>
+                <form>
+                <input type="password" name="pass" id="password" onfocus="suggerimento()">
+                <input type="button" onclick="login(pass)" value="invio">
+                <p class="suggerimento" id="suggerimento"></p>
+                </form>
+        </div>
+      </div>
+      <!-- FINE LOGIN -->
+      <audio autoplay>
+        <source src="multimedia/elprimo.mp3" id="elprimo" type="audio/mpeg">
+        </audio>
+      <!-- FINE AUTOPLAY -->
+      <div class="hero">
+          <div class="hero_content">
+             <h1 class="testo-grande"> Questi siamo noi</h1>
+            <table>
+                <tr>
+                    <td class="facce"> <img  class="facce" src="multimedia/abbona.jpg"> </td>
+                    <td class="facce"> <img  class="facce" src="multimedia/ferrera.jpg"></td>
+                    <td class="facce"> <img  class="facce" src="multimedia/zaghi.jpg"></td>
+
+                </tr>
+
+            </table>
+
+
+
+          </div>
+    </div>
+   </body>
+</html>
