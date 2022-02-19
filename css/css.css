@@ -1,9 +1,18 @@
+html {
+	scroll-behavior:smooth;
+}
+
 body {
 	margin: 0px;
 	background-color: #f7f5ef;
 	font-family: 'Open Sans', sans-serif;
 	-webkit-tap-highlight-color: transparent;
 	width: 100%;
+	font-size: 20px;
+}
+
+.contenuto{
+	padding: 0 2% 0 2%;
 }
 
 .evidenziato {
@@ -167,6 +176,12 @@ img.home {
 	overflow: hidden;
 }
 
+a, a:visited, a:hover, a:active {
+	color: #fa2a59;
+	text-transform: none;
+  }
+
+/*
 .hero:after {
 	content: '';
 	width: 100%;
@@ -175,8 +190,7 @@ img.home {
 	position: absolute;
 	top: 0;
 	left: 0;
-	opacity: 10;
-}
+}*/
 
 .hero_content {
 	width: 100%;
@@ -189,6 +203,16 @@ img.home {
 	text-align: center;
 }
 
+#bottone-inizio{
+	width: auto;
+	height: auto;
+	padding: 20px;
+	border-radius: 30px;
+	color:black;
+	background-color: white;
+	text-decoration: none;
+}
+
 
 #video_back {
 	position: absolute;
@@ -199,7 +223,7 @@ img.home {
 
 .barra-progressi {
 	height: 6px;
-	background: #0000ff;
+	background: #fa2a59;
 	width: 0%;
 }
 
@@ -218,11 +242,62 @@ width: 50%;
 text-align: center;
 float: none;
 margin: auto;
+text-decoration: none;
+padding-top: 3%;
 }
-.contenitore{
-	width: 33.33%;
+
+.contenitori-3{
+	width: 33%;
 	text-align: center;
 	float: left;
 	margin-top: 5%;
 }
+
+.contenitori-2{
+	width: 50%;
+	text-align: center;
+	float: left;
+	margin-top: 5%;
+}
+
+
 /* FINE MAIN*/
+
+.footer {
+	width: 100%;
+}
+
+.footer-element {
+	width: 45%;
+	float: left;
+	
+}
+
+.footer-element-copy {
+	width: auto;
+	float: left;
+}
+
+img.footer-img {
+	width: 30px;
+	height: auto;
+	padding: 10px;
+}
+
+img.footer-img-contact {
+	width: 20px;
+	height: auto;
+	padding: 10px;
+}
+
+.footer-element-right {
+	position: absolute;
+	right: 0;
+	width: auto;
+	height: auto;
+}
+
+p.footer{
+	font-size: 15px;
+	font-family: "Times New Roman", Times, serif;
+}

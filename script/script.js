@@ -32,8 +32,12 @@ window.onscroll = function () {
 };
 
 function scrollo() {
-	var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-	var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+	var winScroll = document.body.scrollTop;  
+	var height =  document.body.scrollHeight - document.body.clientHeight;
 	var scrolled = (winScroll / height) * 100;
 	document.getElementById("barra-progressi").style.width = scrolled + "%";
 }
+
+
+
+

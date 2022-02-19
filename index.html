@@ -2,7 +2,7 @@
    <head>
       <meta charset="UTF-8">
       <title> Sicurezza informatica - home</title>
-      <link rel="stylesheet" type="text/css" href="css.css">
+      <link rel="stylesheet" type="text/css" href="css/css.css">
       <script src="script/script.js"></script>
       <link rel="icon" type="image/x-icon" href="resources/favicon.ico">
       <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,48 +50,75 @@
          <video autoplay muted loop id="video_back">
             <source src="resources/video_back.mp4" type="video/mp4">
          </video>
-         <div class="hero_content">
-            <h1 class="testo_grande animazione stroke">Ciao, benvenuto nel nostro sito</h1>
-            <p class="sottotitolo animazione stroke"> Qua troverai tutto quello che ti serve sapere riguardo la crittografia</p>
-         </div>      
+         <div class="hero_content animazione">
+            <h1 class="testo_grande stroke">Ciao, benvenuto nel nostro sito</h1>
+            <p class="sottotitolo stroke"> Qui troverai tutto quello che ti serve sapere riguardo la crittografia</p>
+            <br>
+            <a  id="bottone-inizio" href="#inizio-pagina"> Inizia subito!</a>
+         </div>
       </div>
-   <!-- FINE HERO CONTENT -->
+      <!-- FINE HERO CONTENT -->
+      <a name="inizio-pagina">
+         <div class="mega-contenitore">
+      </a>
+      <br><br><br><br>
+      <div class="contenitore-centrale">
+      <img src="resources/crittografia.png" class="immagine-feature" alt="crittografia">
+      <p class="evidenziato"> La crittografia</p>
+      <p class="contenuto">La crittografia è la base della protezione dei dati ed il modo più importante per garantire che le informazioni che ci scambiamo non possano essere rubate e lette. Ormai è noto che Internet è il mezzo più diffuso per veicolare informazioni ed è evidente quanto spesso si sottovalutano i rischi di un suo uso errato. Per questo emerge sempre di più la necessità di una forma di cifratura.<br><br><br>
+      Quindi,<a href="https://it.wikipedia.org/wiki/Crittografia" target=”_blank”> la crittografia</a>, è la tecnica che si occupa della rappresentazione di un messaggio in modo tale che l’informazione in esso contenuta possa essere recepita solo dal destinatario</p>
+      </div> <br><br><br><br><br>
+      <div class="contenitore-centrale">
+      <img class="immagine-feature" src="resources/social-network.png">
+      <p class="evidenziato"> Chi usa i sistemi crittografici?</p>
+      <p class="contenuto">Diversi social network e app di messaggistica, negli ultimi anni, hanno implementato sistemi crittografici al fine di proteggere  i dati e le informazioni confidenziali dei propri utenti dagli attacchi informatici. <br>Alcuni esempi sono riportati qui sotto:</p>
+      </div>
+      <!-- I SOCIAL CHE LO USANO -->
+      <div class="contenitori-2">
+      <img class="immagine-feature" src="resources/telegram.png">
+      <p class="evidenziato"> Telegram </p>
+      <p class="contenuto">Telegram utilizza un sistema di cifratura <a href="https://it.wikipedia.org/wiki/Crittografia_end-to-end">end-to-end</a>. In una chat tra due utenti della piattaforma, ogni utente utilizza una chiave privata e una chiave pubblica; legate tra loro in maniera indissolubile.</p>
+      </div>
+      <div class="contenitori-2">
+      <img class="immagine-feature" src="resources/whatsapp.png">
+      <p class="evidenziato"> Whatsapp </p>
+      <p class="contenuto">Anche whatsapp utilizza un sistema di cifratura end-to-end. Questo garantisce che solo i due interlocutori in una chat privata possano leggere e/o ascoltare il contenuto dei messaggi scambiati. Inoltre, le chiavi cambiano a ogni singolo messaggio inviato.
+      <br>  Da quando è stata completata l'implementazione della crittografia end-to-end nel 2016, la sicurezza digitale è diventata ancora più importante per Whatsapp.
+      </p>
+      </div>     
+      </div> 
       <div class="mega-contenitore">
-            <div class="contenitore-centrale contenuto">
-              <img src="resources/crittografia.png" class="immagine-feature">
-               <p class="evidenziato"> La crittografia</p>
-               <p>La crittografia è la base della protezione dei dati ed il modo più importante per garantire che le informazioni che ci scambiamo non possano essere rubate e lette. Ormai è noto che Internet è il mezzo più diffuso per veicolare informazioni ed è evidente quanto spesso si sottovalutano i rischi di un suo uso errato. Per questo emerge sempre di più la necessità di una forma di cifratura.</p>
-            </div>
-            <p class="paragrafo-sparso"><a href="https://it.wikipedia.org/wiki/Crittografia" target=”_blank”>La crittografia </a> è la tecnica che si occupa della rappresentazione di un messaggio in modo tale che l’informazione in esso contenuta possa essere recepita solo dal destinatario</p>
-           <hr>
-           
-            <div class="contenitore">
-               <img class="immagine-feature" src="resources/social-network.png">
-                  <p class="evidenziato"> Chi la usa?</p>
-                  <p>Diversi social network negli ultimi anni hanno implementato sistemi di crittografia al fine di proteggere i propri utenti dagli attacchi informatici. Gli esem</p>
-           <!-- ATTENZIONE: SCRIVERE PRIMA PARTE IN UNA LINEA SPARSA E METTERE I SOCIAL IN UNA RIGA -->
-               </div>
-
-            <div class="contenitore">
-               <img class="immagine-feature" src="resources/social-network.png">
-                  <p class="evidenziato"> Chi la usa?</p>
-                  <p>Anim reprehenderit esse anim aliquip magna magna consequat culpa veniam sunt voluptate est velit.</p>
-            </div>
-            
-            <div class="contenitore">
-               <img class="immagine-feature" src="resources/social-network.png">
-                  <p class="evidenziato"> Chi la usa?</p>
-                  <p>Anim reprehenderit esse anim aliquip magna magna consequat culpa veniam sunt voluptate est velit.</p>
-            </div>
-
+         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+         <div class="contenitore-centrale">
+            <img class="immagine-feature" src="resources/keywords.png">
+            <p class="evidenziato">Come funziona quindi la crittografia?</p>
+            <p class="contenuto"> Un sistema di crittografia è un algoritmo, che permette di cifrare una serie di dati in modo tale da renderli illeggibili se non si possiede una chiave.
+               Gli algoritmi di crittografia si possono dividere in due categorie: gli algoritmi a <a href="chiave_simmetrica.html"> crittografia simmetrica </a> o a chiave privata, e gli algoritmi di <a href="chiave_asimmetrica.html">crittografia asimmetrica </a>a chiave pubblica.
+               <br> Clicca sui link per informarti maggiormente.
+            </p>
+         </div>
       </div>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    
-    
+      <!-- FINE CONTENUTO -->
+      <!-- FOOTER -->
+      <hr>
+      <footer>
+         <div class="footer">
+            <div class="footer-element-copy">
+               <img src="resources/favicon.ico" class="footer-img" alt="logo">              
+            </div>
+            <div class="footer-element">
+               <p class="footer">Abbona Ferrera Zaghi SRL copyright©</p>
+            </div>
+            <div class="footer-element-right">
+               <a href="https://github.com/ecoyocena/sicurezza_sistemi" target=”_blank”> <img src="resources/github.svg" class="footer-img-contact" alt="github"></a>
+               <a href="mailto:enrico.abbona@studenti.liceovalsalice.it;damianodomenicopaolo.ferrera@studenti.liceovalsalice.it;davide.zaghi@stuendi.liceovalsalice.it" target=”_blank”> <img src="resources/email.svg" class="footer-img-contact" alt="contatti email"></a>
+            </div>
+         </div>
+      </footer>
       <!-- SCRIPT ANIMAZIONI -->
-    <script>
+      <script>
          ScrollReveal().reveal('.animazione', { distance: '50px', duration:1500, interval:200, scale: 0.85, reset:true, easing: 'cubic-bezier(.251, .62, .355, 1)' });
-         ScrollReveal().reveal('.contenuto', { distance: '50px', duration:1500, easing: 'cubic-bezier(.251, .62, .355, 1)' });
-     </script>
+         // ScrollReveal().reveal('.contenuto', { distance: '50px', reset:true, duration:1500, easing: 'cubic-bezier(.251, .62, .355, 1)' });
+      </script>
    </body>
 </html>
