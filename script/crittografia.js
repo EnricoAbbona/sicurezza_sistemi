@@ -26,7 +26,12 @@ function Cifrato(testo, testoCifrato, chiave, decifra) {
 		document.getElementById("chiavee").style.border = 'none';
 		document.getElementById("displayato").style.display = 'contents';
 		return;
-	} else {
+	}
+	else if (chiave.value == ""){
+		alert('ATTENZIONE!! Non hai inserito nessuna chiave');
+	}
+	
+	else {
 		var alfabeto = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
 		testo.value = testo.value.toUpperCase();

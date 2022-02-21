@@ -1,9 +1,8 @@
-// prova
 function login(password) {
     
    var pass;
      if (password.value=="ElPrimo" || password.value=="q") {
-    alert("El Primo è infinitamente felice di quello che fai");
+    alert("Hai superato i nostri avanzatissimi sistemi di sicurezza");
     document.getElementById("displayatoo").style.display = 'none';
      console.log("la password è corretta");
     }

@@ -1,0 +1,5 @@
+Ciao :) 
+Benvenuto. Prima di iniziare ci teniamo a ringraziarti per essere qua
+Inzia subito la tua esperienza di apprendimento facendo doppio click su index.html
+Puoi trovare la repositry del nostro sito su github al link https://github.com/EnricoAbbona/sicurezza_sistemi oppure visitare il nostro sito dal link https://enricoabbona.github.io/sicurezza_sistemi/
+                Grazie dell'attezione, buon apprendimento.

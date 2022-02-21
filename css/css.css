@@ -142,15 +142,13 @@ img.home {
 	margin: 10px 0px 0px 5px;
 }
 
-.immaginine {
-	width: 60px;
-	height: auto;
-}
 
 .immagine-feature {
 	width: 80px;
 	height: auto;
 }
+
+
 
 .feature {
 	text-align: center;
@@ -263,8 +261,12 @@ padding-top: 3%;
 
 /* FINE MAIN*/
 
-.footer {
+footer {
 	width: 100%;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	
 }
 
 .footer-element {
