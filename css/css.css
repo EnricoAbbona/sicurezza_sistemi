@@ -303,3 +303,28 @@ p.footer{
 	font-size: 15px;
 	font-family: "Times New Roman", Times, serif;
 }
+
+.mappa {
+	display: block;
+	width: 490px;
+	height: 350px;
+    margin: 0 auto;
+}
+
+
+
+.autori {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse:collapse ;
+}
+
+td.autorii {
+	border: 1px solid black;
+
+}
+
+tr.legenda{
+	background-color: rgb(175, 174, 174);
+}
