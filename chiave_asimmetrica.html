@@ -47,44 +47,44 @@
       <!-- FINE NAVBAR -->
       <!-- TESTO -->
       <div class="mega-contenitore">
-      <div class="contenitore-centrale">
-         <img src="resources/asimmetrica.png" alt="Crittografia Asimmetrica">
-      <p class="evidenziato">La Crittografia Asimmetrica</p>
-      <p class="contenuto"> La <span class="grassetto"> crittografia asimmetrica </span> è un metodo di codifica e decodifica dei messaggi veicolati attraverso Internet. Questo tipo di crittografia usa due tipi di chiavi indipendenti, una per crittografare i dati e l’altra per decodificarli:</p>
-      <!--ELENCO PUNTATO-->
-      <ul class="prova">
-         <li class="aperto"><span class="grassetto">Chiave pubblica</span>, accessibile a tutti gli utenti;</li>
-         <li class="chiuso"><span class="grassetto">Chiave privata</span>, unica e segreta per ogni utente.</li>
-      </ul>
+         <div class="contenitore-centrale">
+            <img src="resources/asimmetrica.png" alt="Crittografia Asimmetrica">
+            <p class="evidenziato">La Crittografia Asimmetrica</p>
+            <p class="contenuto"> La <span class="grassetto"> crittografia asimmetrica </span> è un metodo di codifica e decodifica dei messaggi veicolati attraverso Internet. Questo tipo di crittografia usa due tipi di chiavi indipendenti, una per crittografare i dati e l’altra per decodificarli:</p>
+            <!--ELENCO PUNTATO-->
+            <ul class="prova">
+               <li class="aperto"><span class="grassetto">Chiave pubblica</span>, accessibile a tutti gli utenti;</li>
+               <li class="chiuso"><span class="grassetto">Chiave privata</span>, unica e segreta per ogni utente.</li>
+            </ul>
+         </div>
+         <!--TESTO 2-->
+         <div class="contenitore-centrale">
+            <img src="resources/keys.png" alt="Chiavi" class="foto-chiavi">
+            <p class="evidenziato">Come si creano le chiavi?</p>
+            <p class="contenuto">Per creare queste due chiavi, innanzitutto si utilizza un <span class="grassetto">generatore di numeri casuale</span> che genera la chiave privata. Una volta generata la nostra chiave privata, inizia il ciclo di generazione della chiave pubblica. Questo ciclo utilizzerà il numero della chiave privata per collegare in modo <span class="grassetto">unidirezionale</span> la chiave privata con quella pubblica. In questo modo, la chiave pubblica può generare contenuti crittografati che possiamo risolvere con la nostra chiave privata. Va però sottolineato che, <span class="grassetto">niente e nessuno</span> in nessuna circostanza potrà rivelare la nostra chiave privata utilizzando un procedimento contrario. Alcuni degli algoritmi della crittografia asimmetrica più famosi sono: <a href="https://it.wikipedia.org/wiki/RSA_(crittografia)" target="_blank">RSA</a>, <a href="https://it.wikipedia.org/wiki/Digital_Signature_Algorithm" target="_blank">DSA</a> e <a href="https://it.wikipedia.org/wiki/ElGamal" target="_blank">ELGAMAL</a>.</p>
+         </div>
+         <br>
+         <br>
+         <!--TESTO 3-->
+         <div class="contenitore-centrale">
+            <img src="resources/functional.png" alt="funzioni" class="foto-chiavi">
+            <p class="evidenziato"> Utilizzi principali</p>
+         </div>
+         <div class="parti-2">
+            <p class="evidenzia">Crittografia a chiave pubblica</p>
+            <p class="contenuto"> In questo metodo i messaggi sono crittografati con la chiave pubblica del destinatario. Il messaggio perciò non può essere decriptato da chi non possiede la chiave privata corrispondente, cosa che garantisce <span class="grassetto">l’integrità</span> e la <span class="grassetto">riservatezza</span> del messaggio. 
+         </div>
+         <div class="parti-2">
+            <p class="evidenzia">Firma digitale</p>
+            <p class="contenuto"> In questo sistema un messaggio viene firmato con la chiave privata del mittente e può essere verificato da chiunque abbia accesso alla chiave pubblica del mittente. Questo garantisce <span class="grassetto">l’autenticità del mittente</span> e assicura anche che il messaggio non sia stato manomesso, infatti <span class="grassetto">l’integrità del messaggio</span> è garantita dal fatto che la firma digitale verrebbe modificata se qualcuno all’infuori del mittente provasse a modificare il messaggio.</p>
+         </div>
       </div>
-      <!--TESTO 2-->
-      <div class="contenitore-centrale">
-         <img src="resources/keys.png" alt="Chiavi" class="foto-chiavi">
-         <p class="evidenziato">Come si creano le chiavi?</p>
-         <p class="contenuto">Per creare queste due chiavi, innanzitutto si utilizza un <span class="grassetto">generatore di numeri casuale</span> che genera la chiave privata. Una volta generata la nostra chiave privata, inizia il ciclo di generazione della chiave pubblica. Questo ciclo utilizzerà il numero della chiave privata per collegare in modo <span class="grassetto">unidirezionale</span> la chiave privata con quella pubblica. In questo modo, la chiave pubblica può generare contenuti crittografati che possiamo risolvere con la nostra chiave privata. Va però sottolineato che, <span class="grassetto">niente e nessuno</span> in nessuna circostanza potrà rivelare la nostra chiave privata utilizzando un procedimento contrario. Alcuni degli algoritmi della crittografia asimmetrica più famosi sono: <a href="https://it.wikipedia.org/wiki/RSA_(crittografia)" target="_blank">RSA</a>, <a href="https://it.wikipedia.org/wiki/Digital_Signature_Algorithm" target="_blank">DSA</a> e <a href="https://it.wikipedia.org/wiki/ElGamal" target="_blank">ELGAMAL</a>.</p>
-      </div>
-      <br>
-      <br>
-      <!--TESTO 3-->
-      <div class="contenitore-centrale">
-         <img src="resources/functional.png" alt="funzioni" class="foto-chiavi">
-         <p class="evidenziato"> Utilizzi principali</p>
-      </div>
-      <div class="parti-2">
-         <p class="evidenzia">Crittografia a chiave pubblica</p>
-      <p class="contenuto"> In questo metodo i messaggi sono crittografati con la chiave pubblica del destinatario. Il messaggio perciò non può essere decriptato da chi non possiede la chiave privata corrispondente, cosa che garantisce <span class="grassetto">l’integrità</span> e la <span class="grassetto">riservatezza</span> del messaggio. </div>
-      <div class="parti-2">
-      <p class="evidenzia">Firma digitale</p>
-      <p class="contenuto"> In questo sistema un messaggio viene firmato con la chiave privata del mittente e può essere verificato da chiunque abbia accesso alla chiave pubblica del mittente. Questo garantisce <span class="grassetto">l’autenticità del mittente</span> e assicura anche che il messaggio non sia stato manomesso, infatti <span class="grassetto">l’integrità del messaggio</span> è garantita dal fatto che la firma digitale verrebbe modificata se qualcuno all’infuori del mittente provasse a modificare il messaggio.</p>
-      </div>
-   </div>
-<!--TESTO 4-->
-      
+      <!--TESTO 4-->
       <img src="resources/muscle.png" alt="strong" class="foto-muscoli">
       <p class="centra">Punti di forza</p>
       <div class="parti-3">
-      <p class="evidenzia"> Privata e Pubblica</p>
-      <p class="contenuto"> Uno dei punti di forza principali di questo sistema si basa sulla <span class="grassetto">difficoltà di determinare la chiave privata</span> corrispondente alla chiave pubblica. La sicurezza dipende perciò solo dal mantenere la chiave privata segreta, mentre la chiave pubblica può essere pubblicata <span class="grassetto">senza compromettere la sicurezza</span>.</p>
+         <p class="evidenzia"> Privata e Pubblica</p>
+         <p class="contenuto"> Uno dei punti di forza principali di questo sistema si basa sulla <span class="grassetto">difficoltà di determinare la chiave privata</span> corrispondente alla chiave pubblica. La sicurezza dipende perciò solo dal mantenere la chiave privata segreta, mentre la chiave pubblica può essere pubblicata <span class="grassetto">senza compromettere la sicurezza</span>.</p>
       </div>
       <div class="parti-3">
          <p class="evidenzia"> Distribuzione</p>
