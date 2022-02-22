@@ -4,22 +4,19 @@
     border-left: 3%;
     list-style-type: none;
 }
-
 .aperto {
     margin-bottom: 1%;
 }
 .aperto::before {
     content:"\1F513";
 }
-    
 .chiuso::before {
-    content: "	\1F512";
-padding-left: 3.75%;}
-
+    content: " \1F512";
+    padding-left: 3.75%;
+}
 .grassetto {
     font-weight: bold;
 }
-
 .contenitore-meno-ptop {
     width: 50%;
     text-align: center;
@@ -27,57 +24,50 @@ padding-left: 3.75%;}
     margin: auto;
     text-decoration: none;
     padding-top: 3%;
-    }
-
+}
 .foto-chiavi {
     width: 17%;
     height: auto;
 }
-
 .foto-muscoli {
     width: 10%;
     height:auto;
     display: block;
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .evidenzia {
     color: #000000;
     font-weight: 700;
     font-size: 25px;
-    }
-
+}
 .footer {
-        width: 100%;
-        bottom: 0;
-        right: 0;
-        left: 0;
-    }
-    
-
-        .parti-2{
-            width: 50%;
-            text-align: center;
-            float: left;
-            padding-bottom: 7%;
-        }
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.parti-2{
+    width: 50%;
+    text-align: center;
+    float: left;
+    padding-bottom: 7%;
+}
 .centra {
     text-align: center;
     color: #000000;
     font-weight: 700;
     font-size: 35px;
-    margin-bottom:0px; 
+    margin-bottom:0px;
 }
-
 .parti-3:after {
     content: "";
     display: table;
     clear: both;
-  }
-
+}
 .parti-3 {
-        width: 33.33%;
-        text-align: center;
-        float: left;
-        margin-top: 1%;
-    }
+    width: 33.33%;
+    text-align: center;
+    float: left;
+    margin-top: 1%;
+}
